@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;600;700;800&display=swap');
+
+*,
+*::after,
+::before {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+:target {
+  scroll-margin-top: 50px;
+}
+
+:root {
+  --dark-gray: #404040;
+  --light-gray: #ccc;
+  --pink: #ff4ca1;
+  --darkpink: #761248;
+  --offpink: #200313;
+  --pinktext: #E93B8E;
+  --green: #6EF458;
+  --darkgree: #00610d;
+  --offgree: #001e05;
+  --blue: #28B6FA;
+  --darkblue: #00058a;
+  --offbuel: #06072a;
+  --lightblue: rgb(185, 226, 248);
+  --background: #28282a;
+  --surface-color: #fff;
+  --curve: 40;
+  --primary-btn-gradient: linear-gradient(90deg, #FF4CA1 0%, #5533BB 100%);
+  --insc-btn-color: #6EF458;
+  --box-padding: 80px 5%;
+  --background-dark: #0a081e;
+  --headline-gradient-start: #194BB5;
+  --headline-gradient-end: #009DE4;
+  --headline-gradient-shimmer: #5AC8FA;
+  --gradient-highlight-spread: 20%;
+  --gradient-shimmer-angle: 100deg;
+  --gradient-position: 140%;
+  --gradient-position-start: 140;
+  --gradient-position-end: -40;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(136, 152, 158);
+  border-radius: 30px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(7, 12, 14);
+}
+
+.pad {
+  padding: 0 7%;
+
+}
+
+h2 {
+  font-size: 50px;
+}
+
+
+/* --------------------- Classes ---------------------  */
+
+/* ---------- Align ----------  */
+
+.left,
+.right {
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------- Align ----------  */
+
+
+/* ---------- Animation ----------  */
+
+[data-anime="left"] {
+  transform: translate3d(-100px, 0, 0);
+  opacity: 0;
+  transition: 1s;
+}
+
+[data-anime="right"] {
+  transform: translate3d(100px, 0, 0);
+  opacity: 0;
+  transition: 1s;
+}
+
+[data-anime="top"] {
+  transform: translate3d(0, 100px, 0);
+  opacity: 0;
+  transition: 1s;
+}
+
+[data-anime="top2"] {
+  transform: translate3d(0, 200px, 0);
+  opacity: 0;
+  transition: 1s;
+}
+
+[data-anime="top3"] {
+  transform: translate3d(0, 300px, 0);
+  opacity: 0;
+  transition: 1s;
+}
+
+
+.animate {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+@keyframes fadeDownTop {
+  from {
+    opacity: 0;
+    transform: translate(100%, 100%) scale(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+@keyframes fadeTopDown {
+  from {
+    opacity: 1;
+    transform: translate(0, 0, 0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translate(100%, 100%) scale(0);
+  }
+}
+
+/* ---------- Animation ----------  */
