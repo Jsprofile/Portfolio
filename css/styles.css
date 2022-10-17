@@ -105,7 +105,7 @@ header ul li a {
     background-color: #161616d1;
     backdrop-filter: blur(10px);
     --dark-gray: #ccc;
-  }
+}
 
 
 
@@ -212,7 +212,7 @@ header ul li a {
     transition: .3s transform linear, .3s height linear .5s;
 }
 
-.box a{
+.box a {
     color: #000;
     text-decoration: none;
 }
@@ -238,29 +238,29 @@ header ul li a {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-  }
-  
-  .pra-quem h2 {
+}
+
+.pra-quem h2 {
     color: var(--blue);
     font-size: 50px;
-  }
-  
-  .pra-quem p {
+}
+
+.pra-quem p {
     color: white;
     font-size: 25px;
     margin-top: 20px;
     margin-bottom: 30px;
-  }
-  
-  .pra-quem strong {
+}
+
+.pra-quem strong {
     color: var(--blue);
     font-size: 25px;
-  
-  }
-  
-  .pra-quem img{
+
+}
+
+.pra-quem img {
     max-width: 100%;
-  }
+}
 
 .aboutService {
     padding: var(--box-padding);
@@ -285,7 +285,8 @@ header ul li a {
     align-items: center;
 }
 
-.advantages .right h2, .advantages .right p{
+.advantages .right h2,
+.advantages .right p {
     color: #fff;
 }
 
@@ -296,7 +297,7 @@ header ul li a {
     height: 100%;
 }
 
-.advantages .right .R{
+.advantages .right .R {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -402,7 +403,7 @@ header ul li a {
     animation: fadeTopDown .5s forwards !important;
 }
 
-.projectTypes{
+.projectTypes {
     width: 100%;
     height: 400px;
     display: grid;
@@ -411,7 +412,7 @@ header ul li a {
     gap: .5%;
 }
 
-.projectTypes .card{
+.projectTypes .card {
     max-width: 99%;
     height: 100%;
     padding: 20px 15%;
@@ -427,21 +428,21 @@ header ul li a {
     z-index: 1;
 }
 
-.projectTypes .card h3{
-    background-image: linear-gradient(var(--headline-gradient-shimmer),var(--headline-gradient-start),var(--headline-gradient-end));
+.projectTypes .card h3 {
+    background-image: linear-gradient(var(--headline-gradient-shimmer), var(--headline-gradient-start), var(--headline-gradient-end));
     color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 250%;
 }
 
-.projectTypes .card p{
+.projectTypes .card p {
     color: #fff;
     line-height: 20px;
     font-weight: 300;
 }
 
-.projectTypes .insideCardM{
+.projectTypes .insideCardM {
     width: 100%;
     height: 100%;
     background-color: #161933;
@@ -456,7 +457,7 @@ header ul li a {
     display: none;
 }
 
-.projectTypes .insideCardC{
+.projectTypes .insideCardC {
     width: 100%;
     height: 100%;
     background-color: #161933;
@@ -497,94 +498,89 @@ header ul li a {
     cursor: pointer;
     font-weight: bold;
     z-index: 3;
-   }
-   
-   .PTBtn:hover {
+}
+
+.PTBtn:hover {
     box-shadow: 0 0 10px #ae00ff, 0 0 25px #001eff, 0 0 50px #ae00ff;
     transition-delay: 0.6s;
-   }
-   
-   .PTBtn span {
+}
+
+.PTBtn span {
     position: absolute;
-   }
-   
-   .PTBtn span:nth-child(1) {
+}
+
+.PTBtn span:nth-child(1) {
     top: 0;
     left: -100%;
     width: 100%;
     height: 2px;
     background: linear-gradient(90deg, transparent, #ae00ff);
-   }
-   
-   .PTBtn:hover span:nth-child(1) {
+}
+
+.PTBtn:hover span:nth-child(1) {
     left: 100%;
     transition: 0.7s;
-   }
-   
-   .PTBtn span:nth-child(3) {
+}
+
+.PTBtn span:nth-child(3) {
     bottom: 0;
     right: -100%;
     width: 100%;
     height: 2px;
     background: linear-gradient(90deg, transparent, #001eff);
-   }
-   
-   .PTBtn:hover span:nth-child(3) {
+}
+
+.PTBtn:hover span:nth-child(3) {
     right: 100%;
     transition: 0.7s;
     transition-delay: 0.35s;
-   }
-   
-   .PTBtn span:nth-child(2) {
+}
+
+.PTBtn span:nth-child(2) {
     top: -100%;
     right: 0;
     width: 2px;
     height: 100%;
     background: linear-gradient(180deg, transparent, #ae00ff);
-   }
-   
-   .PTBtn:hover span:nth-child(2) {
+}
+
+.PTBtn:hover span:nth-child(2) {
     top: 100%;
     transition: 0.7s;
     transition-delay: 0.17s;
-   }
-   
-   .PTBtn span:nth-child(4) {
+}
+
+.PTBtn span:nth-child(4) {
     bottom: -100%;
     left: 0;
     width: 2px;
     height: 100%;
     background: linear-gradient(360deg, transparent, #001eff);
-   }
-   
-   .PTBtn:hover span:nth-child(4) {
+}
+
+.PTBtn:hover span:nth-child(4) {
     bottom: 100%;
     transition: 0.7s;
     transition-delay: 0.52s;
-   }
-   
-   .PTBtn:active {
+}
+
+.PTBtn:active {
     background: #ae00af;
     background: linear-gradient(to top right, #ae00af, #001eff);
     color: #bfbfbf;
     box-shadow: 0 0 8px #ae00ff, 0 0 8px #001eff, 0 0 8px #ae00ff;
     transition: 0.1s;
-   }
-   
-   .PTBtn:active span:nth-child(1) 
-   span:nth-child(2) 
-   span:nth-child(2) 
-   span:nth-child(2) {
+}
+
+.PTBtn:active span:nth-child(1) span:nth-child(2) span:nth-child(2) span:nth-child(2) {
     transition: none;
     transition-delay: none;
-   }
+}
 
-   .activePTBtn{
-
-   }
+.activePTBtn {}
 
 
-   .pages{
+.pages {
     padding: var(--box-padding);
     width: 100%;
     height: 100vh;
@@ -592,5 +588,59 @@ header ul li a {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-   }
-   
+}
+
+
+
+.swiper {
+    overflow: visible !important;
+}
+
+.swiper-wrapper a {
+    max-width: 100%;
+}
+
+
+.swiper-wrapper img {
+    max-width: 100%;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.swiper-wrapper img:hover {
+    transform: scale(1.05);
+    transition: .5s;
+}
+
+
+@media (max-width: 800px) {
+    .headline img {
+        max-width: 85%;
+    }
+    .projectTypes{
+        min-height: 400px;
+        height: fit-content;
+        grid-template-columns: 1fr;
+    }
+    .projectTypes .card{
+        gap: 20px;
+    }
+
+    .pages{
+        height: 55vh;
+        gap: 10vh;
+    }
+    .advantages{
+        grid-template-columns: 1fr;
+    }
+    .advantages .left, .advantages img{
+        display: none;
+    }
+    .advantages .right{
+        max-width: 100%;
+    }
+
+    .advantages .bxP img{
+        display: block;
+    }
+}

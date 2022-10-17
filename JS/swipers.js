@@ -1,4 +1,5 @@
-var swiper = new Swiper(".mySwiper", {
+if(window.innerWidth > 800){
+  var swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,
     grid: {
       rows: 2,
@@ -9,3 +10,20 @@ var swiper = new Swiper(".mySwiper", {
       clickable: true,
     },
   });
+
+}
+
+if(window.innerWidth <= 800){
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    grid: {
+      rows: 1,
+    },
+    spaceBetween: 10,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+
+}
